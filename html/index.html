@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DREC</title>
+
+	
+	<!-- Main style -->
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/FA5PRO-master/css/all.css"/>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/nice-select.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+	
+</head>
+<body>
+
+  <header class="header-home">
+		<div class="top-line">
+			<div class="content-width">
+				<div class="logo-wrap">
+					<a href="index.html">
+						<img src="img/logo.svg" alt="" class="logo-desk">
+						<img src="img/logo-home.svg" alt="" class="logo-mob">
+						<img src="img/logo-1.svg" alt="" class="logo-sticky">
+					</a>
+				</div>
+				<div class="right">
+					<div class="contact-line">
+						<div class="tel-wrap">
+							<ul>
+								<li class="email"><a href="mailto:info@dutchrealestatecompany.com">info@dutchrealestatecompany.com</a></li>
+								<li><a href="tel:+31207723460">(+31) 20 772 34 60</a></li>
+							</ul>
+						</div>
+						<div class="lang-wrap">
+							<ul>
+								<li ><a href="#">en</a></li>
+								<li class="current"><a href="#">nl</a></li>
+							</ul>
+						</div>
+						<div class="open-menu">
+							<a href="#">
+								<div class="wrap">
+									<span></span>
+									<span></span>
+
+								</div>
+								<b>menu</b>
+							</a>
+						</div>
+					</div>
+					<nav class="top-menu">
+						<ul>
+							<li class="current"><a href="#">home</a></li>
+							<li><a href="#">aanbod</a></li>
+							<li><a href="#">diensten</a></li>
+							<li><a href="#">expat service</a></li>
+							<li><a href="#">over ons</a></li>
+							<li><a href="#">blog</a></li>
+							<li><a href="#">contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+  </header>
+
+	<div class="menu-responsive" id="menu-responsive" style="display: none">
+
+		<div class="wrap-block">
+			<nav class="mob-menu">
+				<ul>
+					<li class="current"><a href="#">home</a></li>
+					<li><a href="#">aanbod</a></li>
+					<li><a href="#">diensten</a></li>
+					<li><a href="#">expat service</a></li>
+					<li><a href="#">over ons</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="tel-wrap">
+				<ul>
+					<li class="email"><a href="mailto:info@dutchrealestatecompany.com">info@dutchrealestatecompany.com</a></li>
+					<li><a href="tel:+31207723460">(+31) 20 772 34 60</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<main>
+		<section class="home-banner">
+			<div class="bg">
+				<img src="img/bg-1.jpg" alt="">
+			</div>
+			<div class="content-width">
+				<div class="content">
+					<h1>Koop, verkoop, huur, verhuur of beheer uw woning in Amsterdam en omgeving op uw manier</h1>
+					<div class="btn-wrap">
+						<a href="#" class="btn-default">contact opnemen</a>
+						<a href="#" class="btn-default btn-border">bekijk het aanbod</a>
+					</div>
+					<figure>
+						<img src="img/img-1-1.jpg" alt="">
+					</figure>
+				</div>
+				<div class="filter-line">
+					<form action="#">
+						<div class="wrap">
+							<div class="item input-wrap">
+								<input type="text" name="loc" id="loc" placeholder="">
+								<label for="loc">zoek op plaats</label>
+							</div>
+							<div class="item">
+								<div class="nice-select-1" tabindex="0">
+									<span class="current">alle 3</span>
+									<ul class="list">
+										<li data-value="0" class="option "><span>alle</span> <a href="#" class="no-select" data-name="alle"></a></li>
+										<li data-value="1" class="option"><span>alle 2</span> <a href="#" class="no-select" data-name="alle"></a></li>
+										<li data-value="2" class="option selected"><span>alle 3</span> <a href="#" class="no-select" data-name="alle"></a></li>
+										<li data-value="3" class="option"><span>alle 4</span> <a href="#" class="no-select" data-name="alle"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item item-after-2">
+								<div class="nice-select-1" tabindex="0">
+									<span class="current">m</span>
+									<ul class="list">
+										<li data-value="0" class="option selected">1m <a href="#" class="no-select" data-name="m"></a></li>
+										<li data-value="1" class="option">10m<a href="#" class="no-select" data-name="m"></a></li>
+										<li data-value="2" class="option">20m<a href="#" class="no-select" data-name="m"></a></li>
+										<li data-value="3" class="option">30m<a href="#" class="no-select" data-name="m"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="nice-select-1" tabindex="0">
+									<span class="current">kamers</span>
+									<ul class="list">
+										<li data-value="0" class="option selected">kamers <a href="#" class="no-select" data-name="kamers"></a></li>
+										<li data-value="1" class="option">kamers 2 <a href="#" class="no-select" data-name="kamers"></a></li>
+										<li data-value="2" class="option">kamers 3 <a href="#" class="no-select" data-name="kamers"></a></li>
+										<li data-value="3" class="option">kamers 4 <a href="#" class="no-select" data-name="kamers"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="nice-select-1" tabindex="0">
+									<span class="current">slaapkamers</span>
+									<ul class="list">
+										<li data-value="0" class="option selected">slaapkamers <a href="#" class="no-select" data-name="slaapkamers"></a></li>
+										<li data-value="1" class="option">slaapkamers 2 <a href="#" class="no-select" data-name="slaapkamers"></a></li>
+										<li data-value="2" class="option">slaapkamers 3 <a href="#" class="no-select" data-name="slaapkamers"></a></li>
+										<li data-value="3" class="option">slaapkamers 4 <a href="#" class="no-select" data-name="slaapkamers"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="submit-wrap">
+								<button type="submit" class="btn-default btn-orange"><img src="img/icon-1.svg" alt="">zoeken</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+	<div class="bg-grey">
+		<section class="slider-width-auto">
+			<div class="content-width">
+				<div class="title">
+					<h2>Het huuraanbod</h2>
+					<a href="#" class="btn-default btn-border-black">alles zien</a>
+				</div>
+				<div class="slider-wrap">
+					<div class="swiper slider-auto">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="item item-inaccessible">
+									<a href="#">
+										<figure>
+											<div class="label red">verhuurd</div>
+											<img src="img/img-2-1.jpg" alt="">
+										</figure>
+										<div class="text">
+											<div class="name">
+												<h6>Ruyschstraat 383</h6>
+												<p>Amsterdam</p>
+											</div>
+											<div class="cost">
+												<p><span>€ 1.850</span> p.m. ex. | <span>64</span> M<sup>2</sup></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="#">
+										<figure>
+											<div class="label">te huur</div>
+											<img src="img/img-2-2.jpg" alt="">
+										</figure>
+										<div class="text">
+											<div class="name">
+												<h6>Zuidelijke wandelweg 55</h6>
+												<p>Amsterdam</p>
+											</div>
+											<div class="cost">
+												<p><span>€ 1.850</span> p.m. ex. | <span>64</span> M<sup>2</sup></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="#">
+										<figure>
+											<div class="label">te huur</div>
+											<img src="img/img-2-2.jpg" alt="">
+										</figure>
+										<div class="text">
+											<div class="name">
+												<h6>Zuidelijke wandelweg 55</h6>
+												<p>Amsterdam</p>
+											</div>
+											<div class="cost">
+												<p><span>€ 1.850</span> p.m. ex. | <span>64</span> M<sup>2</sup></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slider-width-auto">
+			<div class="content-width">
+				<div class="title">
+					<h2>Het verkoop aanbod</h2>
+					<a href="#" class="btn-default btn-border-black">alles zien</a>
+				</div>
+				<div class="slider-wrap">
+					<div class="swiper slider-auto">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="#">
+										<figure>
+											<div class="label red">verkoht onder voorbehoud</div>
+											<img src="img/img-3-1.jpg" alt="">
+										</figure>
+										<div class="text">
+											<div class="name">
+												<h6>Ruyschstraat 383</h6>
+												<p>Amsterdam</p>
+											</div>
+											<div class="cost">
+												<p><span>€ 1.850</span> p.m. ex. | <span>64</span> M<sup>2</sup></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="#">
+										<figure>
+											<div class="label black-bg">te huur</div>
+											<img src="img/img-3-2.jpg" alt="">
+										</figure>
+										<div class="text">
+											<div class="name">
+												<h6>Zuidelijke wandelweg 55</h6>
+												<p>Amsterdam</p>
+											</div>
+											<div class="cost">
+												<p><span>€ 1.850</span> p.m. ex. | <span>64</span> M<sup>2</sup></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="#">
+										<figure>
+											<div class="label">te huur</div>
+											<img src="img/img-3-2.jpg" alt="">
+										</figure>
+										<div class="text">
+											<div class="name">
+												<h6>Zuidelijke wandelweg 55</h6>
+												<p>Amsterdam</p>
+											</div>
+											<div class="cost">
+												<p><span>€ 1.850</span> p.m. ex. | <span>64</span> M<sup>2</sup></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="content-width">
+				<div class="content">
+					<div class="bg"></div>
+					<div class="wrap">
+						<div class="text">
+							<h2>Onze diensten</h2>
+							<ul>
+								<li>
+									<a href="#">
+										<h6>Een woning verkopen</h6>
+										<p>De woning verkopen voor wat deze écht waard is. Wij letten op de details.</p>
+										<img src="img/icon-3.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h6>Een woning aankopen</h6>
+										<p>Een huis aankopen is niet zo maar iets, en wij begeleiden u bij deze belangrijke stap met uitstekende service en advies.</p>
+										<img src="img/icon-3.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h6>Een woning huren</h6>
+										<p>De woning verkopen voor wat deze écht waard is. Wij letten op de details.</p>
+										<img src="img/icon-3.svg" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h6>Een woning (aankopen en) verhuren</h6>
+										<p>Een huis aankopen is niet zo maar iets, en wij begeleiden u bij deze belangrijke stap met uitstekende service en advies.</p>
+										<img src="img/icon-3.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<figure>
+							<div class="wrap wrap-1">
+								<div class="info">
+									<h2>Een woning verkopen</h2>
+									<div class="btn-wrap">
+										<a href="#" class="btn-default btn-border">lees meer</a>
+									</div>
+								</div>
+								<img src="img/img-4-1.jpg" alt="">
+							</div>
+							<div class="wrap wrap-2">
+								<div class="info">
+									<h2>Een woning verkopen 2</h2>
+									<div class="btn-wrap">
+										<a href="#" class="btn-default btn-border">lees meer</a>
+									</div>
+								</div>
+								<img src="img/img-4-1.jpg" alt="">
+							</div>
+							<div class="wrap wrap-3">
+								<div class="info">
+									<h2>Een woning verkopen 3</h2>
+									<div class="btn-wrap">
+										<a href="#" class="btn-default btn-border">lees meer</a>
+									</div>
+								</div>
+								<img src="img/img-4-1.jpg" alt="">
+							</div>
+							<div class="wrap wrap-4">
+								<div class="info">
+									<h2>Een woning verkopen 4</h2>
+									<div class="btn-wrap">
+										<a href="#" class="btn-default btn-border">lees meer</a>
+									</div>
+								</div>
+								<img src="img/img-4-1.jpg" alt="">
+							</div>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+		<section class="reviews">
+			<div class="content-width">
+				<h2>Recensies:</h2>
+				<div class="slider-wrap">
+					<div class="swiper slider-reviews">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<h6>Voornaam Achternaam</h6>
+								<div class="stars-wrap">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+								</div>
+								<p class="info">4 maanden geleden</p>
+								<p>"<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur </span>"</p>
+							</div>
+							<div class="swiper-slide">
+								<h6>Voornaam Achternaam</h6>
+								<div class="stars-wrap">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+								</div>
+								<p class="info">4 maanden geleden</p>
+								<p>"<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur </span>"</p>
+							</div>
+							<div class="swiper-slide">
+								<h6>Voornaam Achternaam</h6>
+								<div class="stars-wrap">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+								</div>
+								<p class="info">4 maanden geleden</p>
+								<p>"<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur </span>"</p>
+							</div>
+							<div class="swiper-slide">
+								<h6>Voornaam Achternaam</h6>
+								<div class="stars-wrap">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+									<img src="img/star.svg" alt="">
+								</div>
+								<p class="info">4 maanden geleden</p>
+								<p>"<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur </span>"</p>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+		</section>
+
+		<section class="img-text">
+			<div class="content-width">
+				<div class="content">
+					<figure>
+						<img src="img/img-5-1.jpg" alt="">
+					</figure>
+					<div class="text">
+						<h2>Ons ervaren en dynamisch team biedt u hoogwaardige diensten <b>op maat
+						gemaakt voor uw vastgoedwensen.</b></h2>
+
+						<p>Het vinden van een woning of het verkopen van een woning op de bewegelijke vastgoedmarkt vereist lokale kennis en een uitgebreid netwerk, snelle afhandeling en een proactieve aanpak.</p>
+
+						<p>Wij zijn er om u van begin tot eind te begeleiden, onder andere met aanvullende diensten zoals hypotheekadvies, verzekeringen, interieurontwerp en renovaties.</p>
+
+						<p>Hoewel wij gespecialiseerd zijn in huisvesting voor expats, werken wij ook regelmatig met Nederlandse klanten. Laat ons u helpen bij het verhuizen naar een nieuwe locatie, naar een nieuwe woning en naar de volgende stap. Dat is waar we goed in zijn.</p>
+
+						<div class="btn-wrap">
+							<a href="#" class="btn-default btn-blue">contact opnemen</a>
+							<a href="#" class="btn-default btn-border-black">bekijk ons aanbod</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+
+	<div class="fix-block">
+		<a href="#" class="top-site"><img src="img/icon-4.svg" alt=""></a>
+	</div>
+
+  <footer>
+    <div class="content-width">
+			<div class="content">
+				<div class="logo-wrap">
+					<a href="index.html">
+						<img src="img/logo-footer.svg" alt="">
+					</a>
+				</div>
+				<nav class="footer-menu">
+					<ul>
+						<li><h6>Onze diensten</h6></li>
+						<li><a href="#">Aankoop</a></li>
+						<li><a href="#">Verkoop</a></li>
+						<li><a href="#">Huren</a></li>
+						<li><a href="#">Investeren</a></li>
+					</ul>
+
+					<ul>
+						<li><h6>Aanbod</h6></li>
+						<li><a href="#">Te huur</a></li>
+						<li><a href="#">Te koop</a></li>
+						<li><a href="#">Aangekocht</a></li>
+					</ul>
+
+					<ul>
+						<li><h6>Adres</h6></li>
+						<li><p>Maasstraat 188</p></li>
+						<li><p>1079 BL Amsterdam</p></li>
+					</ul>
+
+					<ul>
+						<li><h6>Contact</h6></li>
+						<li><a href="tel:+31207723460">(+31) 20772 34 60</a></li>
+						<li><a href="mailto:info@dutchrealestate.company.com">info@dutchrealestate.company.com</a></li>
+					</ul>
+				</nav>
+			</div>
+    </div>
+		<div class="bottom">
+			<div class="content-width">
+				<div class="left">
+					<ul>
+						<li><p>©️ 2022 Dutch Real Estate Company</p></li>
+						<li><a href="#">Disclaimer</a></li>
+						<li><a href="#">Privacy</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><img src="img/img-6-1.svg" alt=""></li>
+						<li><img src="img/img-6-2.svg" alt=""></li>
+						<li><img src="img/img-6-3.svg" alt=""></li>
+					</ul>
+					<div class="info">
+						<p>4.9 Stars</p>
+						<div class="wrap">
+							<img src="img/star-1.svg" alt="">
+							<img src="img/star-1.svg" alt="">
+							<img src="img/star-1.svg" alt="">
+							<img src="img/star-1.svg" alt="">
+							<img src="img/star-1.svg" alt="">
+						</div>
+						<p><a href="#">152</a>reviews on</p>
+					</div>
+				</div>
+			</div>
+		</div>
+  </footer>
+
+
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/cuttr.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
