@@ -214,4 +214,48 @@ jQuery(document).ready(function ($) {
     };
   })(jQuery);
   $(".tabs").lightTabs();
+
+ /* open filter*/
+  $(document).on('click', '.open-filter', function (e){
+    e.preventDefault();
+    $(this).toggleClass('is-open');
+
+    if($(this).hasClass('is-open')){
+      $('.offer .filter-line').addClass('is-active');
+    }else{
+      $('.offer .filter-line').removeClass('is-active');
+    }
+  })
+
+  /*slider*/
+  var swiperMini = new Swiper(".slider-min", {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".min-next",
+      prevEl: ".min-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 6,
+      },
+    }
+  });
+  var swiperBig = new Swiper(".slider-big", {
+    loop: true,
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperMini,
+    },
+  });
 });
