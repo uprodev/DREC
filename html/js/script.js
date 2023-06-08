@@ -245,17 +245,98 @@ jQuery(document).ready(function ($) {
       768: {
         slidesPerView: 4,
       },
-      1024: {
+      1280: {
         slidesPerView: 6,
       },
     }
   });
   var swiperBig = new Swiper(".slider-big", {
     loop: true,
-    spaceBetween: 10,
-
+    spaceBetween: 20,
     thumbs: {
       swiper: swiperMini,
     },
+    breakpoints: {
+      320: {
+        spaceBetween: 10,
+      },
+      480: {
+        spaceBetween: 20,
+      },
+
+    }
   });
+
+  /*popup*/
+  $(".fancybox").fancybox({
+    touch:false,
+    autoFocus:false,
+    beforeShow: function (e) {
+      $('html').addClass("is-popup");
+    },
+    afterClose: function (e) {
+      $('html').removeClass("is-popup");
+    }
+  });
+
+/*  $(".popup-img").fancybox({
+    touch:false,
+    autoFocus:false,
+    beforeShow: function (e) {
+      $('html').addClass("is-img");
+    },
+    afterClose: function (e) {
+      $('html').removeClass("is-img");
+    }
+  });*/
+  $(document).on('click', ' .slider-big .swiper-slide a', function (e){
+    $.fancybox.open( $('#popup-img'), {
+      touch:false,
+      autoFocus:false,
+      beforeShow: function (e) {
+        $('html').addClass("is-img");
+      },
+      afterClose: function (e) {
+        $('html').removeClass("is-img");
+        let imgActive = swiperBig.activeIndex;
+        swiperImg.slideTo(imgActive);
+      }
+    });
+  })
+
+
+
+  var swiperImg = new Swiper(".slider-img", {
+    slidesPerView: 1,
+    spaceBetween: 100,
+    centeredSlides: true,
+    loop:true,
+    pagination: {
+      el: ".pagination-img",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".img-next",
+      prevEl: ".img-prev",
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 10,
+      },
+      480: {
+        spaceBetween: 20,
+      },
+      1200: {
+        spaceBetween: 50,
+      },
+      1500: {
+        spaceBetween: 100,
+      },
+    }
+  });
+
+  swiperBig.on('slideChange', function () {
+    let imgActive = swiperBig.activeIndex;
+    swiperImg.slideTo(imgActive);
+  })
 });
