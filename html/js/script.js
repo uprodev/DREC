@@ -184,6 +184,18 @@ jQuery(document).ready(function ($) {
 
   });
 
+
+    $(".about-services .item a").fancybox({
+    touch:false,
+    autoFocus:false,
+    beforeShow: function (e) {
+      $('html').addClass("is-blog");
+    },
+    afterClose: function (e) {
+      $('html').removeClass("is-blog");
+    }
+  });
+
 //TABS
   (function($){
     jQuery.fn.lightTabs = function(options){
@@ -279,16 +291,7 @@ jQuery(document).ready(function ($) {
     }
   });
 
-/*  $(".popup-img").fancybox({
-    touch:false,
-    autoFocus:false,
-    beforeShow: function (e) {
-      $('html').addClass("is-img");
-    },
-    afterClose: function (e) {
-      $('html').removeClass("is-img");
-    }
-  });*/
+
   $(document).on('click', ' .slider-big .swiper-slide a', function (e){
     $.fancybox.open( $('#popup-img'), {
       touch:false,
