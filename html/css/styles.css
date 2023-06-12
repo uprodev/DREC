@@ -1102,8 +1102,8 @@ footer {
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover;
-      -webkit-transition: all .4s ease;
-      transition: all .4s ease;
+      -webkit-transition: all .6s ease;
+      transition: all .6s ease;
       z-index: 1;
       -webkit-transform-origin: top left;
               transform-origin: top left; }
@@ -1111,6 +1111,11 @@ footer {
       position: absolute;
       bottom: 0;
       right: 0; }
+      .about .item a figure .icon-wrap img {
+        -webkit-transition: all .6s ease;
+        transition: all .6s ease;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
   .about .item a h6 {
     font-style: normal;
     font-weight: 500;
@@ -1135,6 +1140,9 @@ footer {
   .about .item a:hover figure > img {
     -webkit-transform: scale(0.91);
             transform: scale(0.91); }
+  .about .item a:hover figure .icon-wrap img {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
 
 .nice-select-1 {
   -webkit-tap-highlight-color: transparent;

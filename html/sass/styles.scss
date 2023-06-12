@@ -1225,7 +1225,7 @@ footer{
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: all .4s ease;
+          transition: all .6s ease;
           z-index: 1;
           transform-origin: top left;
         }
@@ -1233,6 +1233,10 @@ footer{
           position: absolute;
           bottom: 0;
           right: 0;
+          img{
+            transition: all .6s ease;
+            transform: rotate(180deg);
+          }
         }
       }
       h6{
@@ -1262,6 +1266,11 @@ footer{
         figure{
           &>img{
             transform: scale(0.91);
+          }
+          .icon-wrap{
+            img{
+              transform: rotate(0);
+            }
           }
         }
       }
