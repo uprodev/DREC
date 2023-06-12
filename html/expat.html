@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/nice-select.css"/>
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/aos.css"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 	
@@ -118,16 +119,16 @@
 
 		<section class="item-4x">
 			<div class="content-width">
-				<div class="item item-text">
+				<div class="item item-text" data-aos-delay="100" data-aos="fade-up">
 					<h2>Relocating services, specifically designed for expats and their families</h2>
 				</div>
-				<div class="item item-text">
+				<div class="item item-text" data-aos-delay="200" data-aos="fade-up">
 					<p>Relocating to the Netherlands and looking for a reliable expat-friendly service to assist you with a smooth transition into a (temporary) new home? Let us help you along! We provide you with the most suitable properties, from both our own listings and from agents in our network and guide you through the administrative steps. We inspect the house or apartment and make sure you can move in without problems or questions afterwards.</p>
 
 					<p>If an employee is relocating to the Netherlands from abroad to work for your company and you want to find temporary housing for them, with or without their family, then we can find them a suitable partly or fully furnished home. Contact us for more information on our corporate expat relocation services.</p>
 				</div>
-				<div class="item item-img">
-					<div class="img-wrap">
+				<div class="item item-img" data-aos-delay="100" data-aos="fade-up">
+					<div class="img-wrap" >
 						<img src="img/img-24-1.jpg" alt="">
 					</div>
 					<div class="wrap">
@@ -140,7 +141,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="item item-img">
+				<div class="item item-img" data-aos-delay="200" data-aos="fade-up">
 					<div class="img-wrap">
 						<img src="img/img-24-2.jpg" alt="">
 					</div>
@@ -366,68 +367,13 @@
 	</div>
 
 
-<script>
-	function initMap() {
-
-		var options = {lat: 52.34193338096815, lng: 4.897599904963229};
-
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 16,
-			center: options,
-			mapTypeControl: false,
-			scrollwheel: false,
-			zoomControl: false,
-			disableDefaultUI: true,
-
-		});
-
-
-
-		var latLng = new google.maps.LatLng(52.34193338096815, 4.897599904963229);
-
-
-
-		if(window.innerWidth > 990){
-			var markerIcon = {
-				url: 'img/logo-map-1.svg',
-				scaledSize: new google.maps.Size(116, 78),
-				origin: new google.maps.Point(0, 0),
-				anchor: new google.maps.Point(58,39)
-			};
-		}else if(window.innerWidth > 639){
-			var markerIcon = {
-				url: 'img/logo-map-2.svg',
-				scaledSize: new google.maps.Size(72, 48),
-				origin: new google.maps.Point(0, 0),
-				anchor: new google.maps.Point(36,24)
-			};
-		}else{
-			var markerIcon = {
-				url: 'img/logo-map-3.svg',
-				scaledSize: new google.maps.Size(36, 24),
-				origin: new google.maps.Point(0, 0),
-				anchor: new google.maps.Point(18,12)
-			};
-		}
-		var marker = new google.maps.Marker({
-			position: latLng,
-			map: map,
-			icon: markerIcon
-		});
-	}
-</script>
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&libraries=places&v=3.exp&callback=initMap" defer></script>
-
-
   <script src="js/jquery.min.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/cuttr.min.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

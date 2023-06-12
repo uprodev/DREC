@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/nice-select.css"/>
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/aos.css"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 	
@@ -120,9 +121,9 @@
 			</div>
 		</section>
 
-		<section class="step-to-step">
+		<section class="step-to-step" >
 			<div class="content-width">
-				<div class="slider-wrap">
+				<div class="slider-wrap" data-aos-delay="100" data-aos="fade-up">
 					<div class="head-slider">
 						<h3>Step by step buying guide</h3>
 						<div class="nav-wrap">
@@ -169,7 +170,7 @@
 					</div>
 				</div>
 				
-				<div class="bg-block">
+				<div class="bg-block" data-aos-delay="100" data-aos="fade-up">
 					<div class="bg">
 						<img src="img/bg-3.jpg" alt="">
 					</div>
@@ -395,68 +396,13 @@
 	</div>
 
 
-<script>
-	function initMap() {
-
-		var options = {lat: 52.34193338096815, lng: 4.897599904963229};
-
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 16,
-			center: options,
-			mapTypeControl: false,
-			scrollwheel: false,
-			zoomControl: false,
-			disableDefaultUI: true,
-
-		});
-
-
-
-		var latLng = new google.maps.LatLng(52.34193338096815, 4.897599904963229);
-
-
-
-		if(window.innerWidth > 990){
-			var markerIcon = {
-				url: 'img/logo-map-1.svg',
-				scaledSize: new google.maps.Size(116, 78),
-				origin: new google.maps.Point(0, 0),
-				anchor: new google.maps.Point(58,39)
-			};
-		}else if(window.innerWidth > 639){
-			var markerIcon = {
-				url: 'img/logo-map-2.svg',
-				scaledSize: new google.maps.Size(72, 48),
-				origin: new google.maps.Point(0, 0),
-				anchor: new google.maps.Point(36,24)
-			};
-		}else{
-			var markerIcon = {
-				url: 'img/logo-map-3.svg',
-				scaledSize: new google.maps.Size(36, 24),
-				origin: new google.maps.Point(0, 0),
-				anchor: new google.maps.Point(18,12)
-			};
-		}
-		var marker = new google.maps.Marker({
-			position: latLng,
-			map: map,
-			icon: markerIcon
-		});
-	}
-</script>
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&libraries=places&v=3.exp&callback=initMap" defer></script>
-
-
   <script src="js/jquery.min.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/cuttr.min.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
