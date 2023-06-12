@@ -2952,6 +2952,11 @@ footer {
   .text-img figure {
     width: 48.5%;
     height: 830px; }
+    .text-img figure img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
 
 .item-4x {
   padding: 100px 0 100px;
@@ -3051,6 +3056,106 @@ footer {
         background: #fff;
         color: #052141; }
 
+.service-text-img .text {
+  width: 665px; }
+
 /*---------------------------END-PAGE-EXPAT----------------------------*/
+/*----------------------------PAGE-SERVICE----------------------------*/
+.step-to-step {
+  background: #F7F7F7;
+  padding: 97px 0 100px; }
+  .step-to-step .head-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 47px; }
+  .step-to-step .nav-wrap {
+    width: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .step-to-step .nav-wrap > div {
+      width: 35px;
+      position: relative;
+      top: 0;
+      margin: 0;
+      left: 0;
+      right: 0; }
+      .step-to-step .nav-wrap > div:after {
+        display: none; }
+      .step-to-step .nav-wrap > div img {
+        width: 100%; }
+    .step-to-step .nav-wrap .step-prev img {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1); }
+  .step-to-step h3 {
+    white-space: nowrap;
+    margin-right: 45px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 0; }
+  .step-to-step .bg-block {
+    margin-top: 197px;
+    position: relative; }
+    .step-to-step .bg-block .bg img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .step-to-step .bg-block .wrap {
+      padding: 165px 50px 165px;
+      text-align: center; }
+      .step-to-step .bg-block .wrap h6 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px; }
+      .step-to-step .bg-block .wrap h5 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 50px; }
+      .step-to-step .bg-block .wrap .btn-wrap {
+        text-align: center; }
+
+.step-slider .swiper-slide {
+  padding-top: 25px;
+  border-top: 1px solid #FA5621; }
+  .step-slider .swiper-slide h6 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FA5621;
+    margin-bottom: 25px; }
+  .step-slider .swiper-slide p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.5); }
+
+.step-to-step + .form-img {
+  margin: 0; }
+
+/*---------------------------END-PAGE-SERVICE----------------------------*/
 
 /*# sourceMappingURL=styles.css.map */

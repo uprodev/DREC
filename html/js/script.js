@@ -341,5 +341,34 @@ jQuery(document).ready(function ($) {
   swiperBig.on('slideChange', function () {
     let imgActive = swiperBig.activeIndex;
     swiperImg.slideTo(imgActive);
-  })
+  });
+
+  /*slider*/
+  var swiperStep = new Swiper(".step-slider", {
+    slidesPerView: 4,
+    spaceBetween: 50,
+    autoHeight: true,
+    navigation: {
+      nextEl: ".step-next",
+      prevEl: ".step-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween:40,
+      },
+      1500: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+    }
+  });
 });

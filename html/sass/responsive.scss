@@ -113,6 +113,10 @@ $orange:  #FA5621;
   .blog-popup .text{
     padding: 100px 50px 50px;
   }
+  .service-text-img .text {
+    width: 580px;
+  }
+
 }
 @media (max-width:1520px){
   .popup-img .content-width{
@@ -130,6 +134,7 @@ $orange:  #FA5621;
   .text-img {
     padding: 20px 0 100px;
   }
+
 }
 
 @media (max-width:1280px) {
@@ -1721,6 +1726,50 @@ $orange:  #FA5621;
       display: none;
     }
   }
+  .step-to-step h3{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .step-to-step {
+    padding: 40px 0 20px;
+  }
+  .step-to-step .nav-wrap > div {
+    width: 26px;
+  }
+  .step-to-step .nav-wrap {
+    width: 65px;
+  }
+  .step-to-step .head-slider{
+    margin-bottom: 20px;
+  }
+  .step-slider .swiper-slide h6{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .step-slider .swiper-slide p{
+    font-size: 15px;
+    line-height: 140%;
+  }
+  .step-slider .swiper-slide {
+    padding-top: 19px;
+  }
+  .step-to-step .bg-block {
+    margin-top: 39px;
+  }
+  .step-to-step .bg-block .wrap h6{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .step-to-step .bg-block .wrap h5{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  .step-to-step .bg-block .wrap {
+    padding: 40px 30px 40px;
+  }
 }
 
 @media (max-width:639px) {
@@ -2640,6 +2689,102 @@ $orange:  #FA5621;
   }
   .default-block p, .default-block ul {
     margin-bottom: 21px;
+  }
+  .text-img h1{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .text-img {
+    padding: 39px 0 35px;
+  }
+  .text-img p{
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .text-img figure{
+    max-height: 63vw;
+  }
+  .item-4x .item:first-child h2, .item-4x .item h2{
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
+  }
+  .item-4x {
+    padding: 35px 0 50px;
+  }
+  .item-4x .item-text {
+    margin-bottom: 15px;
+  }
+  .item-4x .item p{
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 15px;
+  }
+  .item-4x .item-img{
+    margin-top: 20px;
+    width: 100%;
+  }
+  .item-4x .item-img h6{
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .item-4x .item-img h5{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .item-4x .item-img + .item-img{
+    margin-top: 35px;
+  }
+  .form-img .content {
+    padding: 20px 0 40px;
+  }
+  .step-to-step h3{
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+  .step-to-step .head-slider{
+    justify-content: space-between;
+  }
+  .step-to-step {
+    padding: 25px 0 45px;
+  }
+  .step-to-step .nav-wrap {
+    width: 63px;
+  }
+  .step-to-step .head-slider {
+    margin-bottom: 10px;
+  }
+  .step-slider .swiper-slide h6{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .step-slider .swiper-slide p{
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .step-to-step .bg-block {
+    margin-top: 35px;
+  }
+  .step-to-step .bg-block{
+    margin-left: -10px;
+    width: calc(100% + 20px);
+    max-width: calc(100% + 20px);
+  }
+  .step-to-step .bg-block .wrap h6{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+  .step-to-step .bg-block .wrap h5{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .step-to-step .bg-block .wrap {
+    padding: 35px 25px 40px;
   }
 }
 
