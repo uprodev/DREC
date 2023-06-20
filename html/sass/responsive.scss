@@ -7,6 +7,11 @@ $orange:  #FA5621;
   .content-width{
     width: 1200px;
   }
+
+  .home-banner .bg {
+    left: -100px;
+    animation: leftNorm 2.5s ease forwards;
+  }
   .home-banner .bg{
     left: 0;
   }
@@ -1850,6 +1855,9 @@ $orange:  #FA5621;
   }
   .form-map .bg{
     width: 440px;
+  }
+  .home-banner .content-width{
+    animation-delay: 0.2s;
   }
 }
 

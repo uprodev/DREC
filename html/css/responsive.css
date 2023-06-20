@@ -3,6 +3,11 @@
     width: 1200px; }
 
   .home-banner .bg {
+    left: -100px;
+    -webkit-animation: leftNorm 2.5s ease forwards;
+            animation: leftNorm 2.5s ease forwards; }
+
+  .home-banner .bg {
     left: 0; }
 
   .home-banner .filter-line {
@@ -1820,7 +1825,11 @@
             order: 2; }
 
   .form-map .bg {
-    width: 440px; } }
+    width: 440px; }
+
+  .home-banner .content-width {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; } }
 @media (max-width: 479px) {
   .content-width {
     width: 100%;

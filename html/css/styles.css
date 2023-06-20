@@ -1817,7 +1817,8 @@ footer {
 /*----------------------------PAGE-OFFER-----------------------------*/
 .offer {
   padding: 115px 0 70px;
-  position: relative; }
+  position: relative;
+  background: #f7f7f7; }
   .offer .nice-select .list {
     width: 100%;
     background: #052141; }
@@ -3164,6 +3165,95 @@ footer {
 .step-to-step + .form-img {
   margin: 0; }
 
-/*---------------------------END-PAGE-SERVICE----------------------------*/
+.home-banner .bg {
+  left: -200px;
+  -webkit-animation: leftTo 2.5s ease forwards;
+          animation: leftTo 2.5s ease forwards;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  right: 108px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
 
+.home-banner .content-width {
+  position: relative;
+  top: 100px;
+  -webkit-animation: topTo 2.5s ease forwards;
+          animation: topTo 2.5s ease forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0; }
+
+@-webkit-keyframes leftTo {
+  0% {
+    left: -200px;
+    right: 108px; }
+  100% {
+    left: 92px;
+    right: 0; } }
+
+@keyframes leftTo {
+  0% {
+    left: -200px;
+    right: 108px; }
+  100% {
+    left: 92px;
+    right: 0; } }
+@keyframes leftTo {
+  0% {
+    left: -200px;
+    right: 108px; }
+  100% {
+    left: 92px;
+    right: 0; } }
+@-webkit-keyframes leftNorm {
+  0% {
+    left: -100px;
+    right: 108px; }
+  100% {
+    left: 0;
+    right: 0; } }
+@keyframes leftNorm {
+  0% {
+    left: -100px;
+    right: 108px; }
+  100% {
+    left: 0;
+    right: 0; } }
+@-webkit-keyframes topTo {
+  0% {
+    top: 100px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+@keyframes topTo {
+  0% {
+    top: 100px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+/*.services-head .text{
+  left: -1000px;
+  animation: leftNorm 2.5s ease forwards;
+  transition: all .4s ease;
+  animation-delay: 1s;
+  opacity: 0;
+  position: relative;
+}
+
+.services-head figure{
+  position: relative;
+  top: 100px;
+  animation: topTo 2.5s ease forwards;
+  animation-delay: 2s;
+  opacity: 0;
+  transition: all .4s ease;
+}*/
+/*---------------------------END-PAGE-SERVICE----------------------------*/
 /*# sourceMappingURL=styles.css.map */

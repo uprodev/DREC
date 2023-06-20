@@ -375,6 +375,7 @@ jQuery(document).ready(function ($) {
   /*animations*/
   AOS.init({
     disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    duration: 1200,
   });
 
 });
